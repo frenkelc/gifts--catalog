@@ -1,0 +1,8 @@
+
+<div *ngIf="product">
+    <h3>{{product.ProductTitle}}</h3>
+  <p>{{product.Description}}</p>
+</div>
+
+<button (click)="back()">Back to catalog</button>
+<a [routerLink]="['../']">Back to catalog</a>

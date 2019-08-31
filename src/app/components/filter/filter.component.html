@@ -1,0 +1,15 @@
+<p>
+    <select (change)="OnFilterByGender($event.target.value)">
+        <option value=0>Gender</option>
+        <option *ngFor="let gender of genderFilter" value={{gender.TagId}} >
+            {{gender.DisplayText}}
+        </option>
+    </select>
+
+  <select (change)="OnFilterByPrice($event.target.value)">
+    <option value=0>Budget</option>
+    <option *ngFor='let price of priceFilter' value={{price.TagId}} >
+        {{price.DisplayText}}
+    </option> 
+   </select>
+</p>

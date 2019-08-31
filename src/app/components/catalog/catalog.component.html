@@ -1,0 +1,6 @@
+
+<app-filter (filterByGender)="onFilteredByGender($event)" (filterByPrice)="onFilteredByPrice($event)"></app-filter>
+
+<div class="product-list">
+  <app-product *ngFor="let item of catalog" [product]="item"></app-product>
+</div>
